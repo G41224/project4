@@ -17,16 +17,19 @@ var library = function (){
 	var phoneNum = function (val){
 		var phLen = val.length
 		for (var i=0; 1<=phLen; i++){
-			if (12 === phLen){
-			return true;
-				if (phLen = true && val.charAt(3) === "-"){       //Extra credit: nested conditional
+			
+			var totl  = 12 === phLen,
+				char3 = val.charAt(3) === "-",
+				char7 = val.charAt(7) === "-";	
+			
+			if (totl && char3 && char7){
 					return true;
-				}else{
-					return false;
-				}
+			
 			}else {
-				return true;
+				return false;
+			
 			}
+		
 		}
 		
 		
